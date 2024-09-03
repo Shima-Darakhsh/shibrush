@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#" data-section="about">About Me</a></li>
+            <li><a href="#" data-section="paintings">Paintings</a></li>
+            <li><a href="#" data-section="graphic-design">Graphic Design</a></li>
+            <li><a href="#" data-section="animated-books">Animated Books</a></li>
+        </ul>
+    </nav>
+    <section id="about" class="content-section">
+        <div class="profile-container">
+            <div class="profile-background"></div>
+            <img src="images/profile.jpg" alt="My Photo" class="profile-photo">
+        </div>
+        <p>Hello! I am Shima, an artist who loves to create and explore new styles.
+            I enjoy experimenting with colors, textures, and different techniques.
+            Art is my way of connecting with the world and sharing my passion with others.</p>
+    </section>
+    <section id="paintings" class="content-section hidden">
+        <h2>Paintings</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/paintings/painting4.png" alt="Painting 4">
+                <p class="image-description">Persian Carpets</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/paintings/painting1.png" alt="Painting 1">
+                <p class="image-description">Your First Memory of Childhood</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/paintings/painting2.png" alt="Painting 2">
+                <p class="image-description">Purple Girl</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/paintings/painting3.png" alt="Painting 3">
+                <p class="image-description">Your Culture</p>
+            </div>
+        </div>
+    </section>
+    <section id="graphic-design" class="content-section hidden">
+        <h2>Graphic Design</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/graphic-design/design1.png" alt="Graphic Design 1">
+                <p class="image-description">World Book Day Poster Event</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/graphic-design/design2.png" alt="Graphic Design 2">
+                <p class="image-description">What Is Your True Beauty?</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/graphic-design/design3.png" alt="Graphic Design 3">
+                <p class="image-description">Ocean Pollution Brochure</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/graphic-design/design4.png" alt="Graphic Design 4">
+                <p class="image-description">Ocean Pollution Brochure</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/graphic-design/design5.png" alt="Graphic Design 5">
+                <p class="image-description">Ocean Pollution Brochure</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/graphic-design/design6.png" alt="Graphic Design 6">
+                <p class="image-description">Imagine Dragons CD Cover</p>
+            </div>
+        </div>
+    </section>
+    <section id="animated-books" class="content-section hidden">
+        <h2>Animated Books</h2>
+        <div id="ebook-viewer" class="ebook-viewer"></div>
+        <div class="ebook-controls">
+            Coming soon!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Shima Darakhsh</p>
+    </footer>
+</body>
+</html>
