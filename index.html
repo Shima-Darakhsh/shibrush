@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script>
+    <!-- PDF.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -15,11 +16,13 @@
         </div>
         <ul>
             <li><a href="#" data-section="about">About Me</a></li>
-            <li><a href="#" data-section="paintings">Paintings</a></li>
+            <li><a href="#" data-section="logo-design">Logo Design</a></li>
             <li><a href="#" data-section="graphic-design">Graphic Design</a></li>
-            <li><a href="#" data-section="animated-books">Animated Books</a></li>
+            <li><a href="#" data-section="animations">Animations</a></li> <!-- New Tab for Animations -->
+            <li><a href="#" data-section="paintings">Paintings</a></li>
         </ul>
     </nav>
+
     <section id="about" class="content-section">
         <div class="profile-container">
             <div class="profile-background"></div>
@@ -29,6 +32,25 @@
             I enjoy experimenting with colors, textures, and different techniques.
             Art is my way of connecting with the world and sharing my passion with others.</p>
     </section>
+
+    <!-- Animations Section -->
+    <section id="animations" class="content-section hidden">
+        <h2>The Immune System (Motion Design)</h2>
+        <div class="video-container">
+            <video id="animation-video" width="100%" controls>
+                <source src="./images/videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h2>Who Are We? (Multi Media)</h2>
+        <div class="video-container">
+            <video id="animation-video" width="100%" controls>
+                <source src="./images/videos/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
     <section id="paintings" class="content-section hidden">
         <h2>Paintings</h2>
         <div class="gallery">
@@ -50,6 +72,7 @@
             </div>
         </div>
     </section>
+
     <section id="graphic-design" class="content-section hidden">
         <h2>Graphic Design</h2>
         <div class="gallery">
@@ -79,13 +102,30 @@
             </div>
         </div>
     </section>
-    <section id="animated-books" class="content-section hidden">
-        <h2>Animated Books</h2>
-        <div id="ebook-viewer" class="ebook-viewer"></div>
-        <div class="ebook-controls">
-            Coming soon!
+
+    <section id="logo-design" class="content-section hidden">
+        <h2>ShiStudio</h2>
+        <!-- First PDF Viewer -->
+        <div class="pdf-viewer">
+            <canvas id="pdf-canvas"></canvas>
+        </div>
+        <div class="pdf-controls">
+            <button id="prevPage" class="pdf-nav">Previous</button>
+            <button id="nextPage" class="pdf-nav">Next</button>
+        </div>
+        <!-- Second PDF Viewer -->
+        <div class="pdf-separator"></div>
+
+        <h2>EcoForum Event</h2>
+        <div class="pdf-viewer">
+            <canvas id="pdf-canvas-2"></canvas>
+        </div>
+        <div class="pdf-controls">
+            <button id="prevPage-2" class="pdf-nav">Previous</button>
+            <button id="nextPage-2" class="pdf-nav">Next</button>
         </div>
     </section>
+
     <footer>
         <p>&copy; 2024 Shima Darakhsh</p>
     </footer>
